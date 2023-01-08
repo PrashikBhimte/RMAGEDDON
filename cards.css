@@ -1,0 +1,24 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    color: aqua;
+    background-color: black;
+    position: relative;
+    margin-left: 10vw;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+}
+
+.card_img{
+    display: none;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card_img, .card{
+    display: block;
+    scale: 1;
+}
