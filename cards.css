@@ -4,21 +4,40 @@
 }
 
 .card{
+    margin-top: 2vw;
     color: aqua;
     background-color: black;
     position: relative;
     margin-left: 10vw;
     text-align: center;
-    width: 300px;
-    height: 500px;
+    width: 20vw;
+    height: auto;
+    min-height: 20vw;
+    transition: 0.7s;
 }
 
 .card_img{
-    display: none;
-    transform-style: preserve-3d;
+    width: 75%;
+    height: auto;
+    transition: 0.5s;
 }
 
-.card:hover .card_img, .card{
+.card:hover .card_img{
+    scale: 1.2;
+}
+
+.card:hover{
+    scale: 1.1;
+}
+
+.card_h{
+    margin-top: 2vw;
+}
+
+.card_p{
+    display: none;
+}
+
+.card:hover .card_p{
     display: block;
-    scale: 1;
 }

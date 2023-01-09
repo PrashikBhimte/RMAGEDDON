@@ -5,3 +5,8 @@ html{
     background-size: cover;
     background-attachment: fixed;
 }
+
+body{
+    margin: 2vw 2vw 2vw 2vw;
+    background: linear-gradient(0deg, rgb(1, 1, 72) 25%, rgba(1, 1, 72, 0));
+}
