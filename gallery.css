@@ -1,0 +1,48 @@
+html{
+    background-image: url("images/WhatsApp\ Image\ 2023-01-10\ at\ 22.56.00.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body{
+    margin: 2vw;
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    color: white;
+    text-align: center;
+    font-family: 'VT323';
+}
+
+.photo_header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    color: #fff;
+    border-bottom: 4px solid #f20606;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+  
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-bottom: 4px solid #f20606;
+}
+  
+.gallery::after {
+    content: "";
+    width: 350px;
+}
