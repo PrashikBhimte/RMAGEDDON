@@ -1,14 +1,107 @@
-/*html{
-    background-image: url("images/WhatsApp\ Image\ 2023-01-10\ at\ 22.56.00.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,100;1,200;1,300;1,400&family=Press+Start+2P&display=swap');
 
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');*/
 
+button{
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #30303000;
+    background: #21212100;
+    color: #828acb;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10vw;
+    width: 90vw;
+    height: auto;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+   
+button:hover{
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.6s;
+}
+   
+button span{
+    position: absolute;
+}
+   
+button span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ae00ff);
+}
+   
+button:hover span:nth-child(1){
+    left: 100%;
+    transition: 0.7s;
+}
+   
+button span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #001eff);
+}
+   
+button:hover span:nth-child(3){
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+}
+   
+button span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ae00ff);
+}
+   
+button:hover span:nth-child(2){
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+}
+   
+button span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #001eff);
+}
+   
+button:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+}
+   
+button:active{
+    background: #ae00af;
+    background: linear-gradient(to top right, #ae00af, #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    transition: 0.1s;
+}
+   
+button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2){
+    transition: none;
+    transition-delay: none;
+}
+   
 
 .svg-frame{
-    margin-top: -350px;
+    margin-top: -25vw;
     margin-left: 65vw;
     position: relative;
     width: 300px;
@@ -80,38 +173,31 @@
 }
 
 body{
+    font-family: 'Poppins';
     margin: 2vw;
     background-color: #080710;
-    /*background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));*/
     color: white;
-    text-align: center;
-}
-
-#nav-icon{
-    font-size: 50px;
-    color: black;
-    display: none;
+    text-align: left;
 }
 
 .navbar{
-    position: fixed;
-    margin: 0 4vw;
-    width: 90%;
+    margin: 0 0;
+    width: 100%;
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     border-radius:30px ;
     z-index: 1;
 }
 
-#link-rnxg{
-    margin-left: 2vw;
+#navul1{
+    float: left;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
 
-#home_link{
-    margin-left: 38vw;
-}
-
-#navul{
+#navul2{
+    float: right;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -125,7 +211,14 @@ body{
 }
 
 .navbar a:hover{
-    color: green;
+    background: hsla(161,100%,44%,1);
+    background: linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
+    background: -webkit-linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00DF9A",endColorstr="#DFFA2D",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header{
@@ -140,8 +233,8 @@ header h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
-    font-size: 150px;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
     margin-bottom: 0vw;
     text-align: left;
 }
@@ -149,50 +242,27 @@ header h1{
 header p{
     text-align: left;
     margin: 0 0;
-    width: 700px;
+    width: 70vw;
     font-size: 30px;
     margin-bottom: 5vw;
 }
 
 .about_rnxg{
+    text-align: center;
     padding-top: 5vw;
     margin-top: 30vw;
     margin-bottom: 5vw;
 }
 
 .about_rnxg h1{
-    background: hsla(161,100%,44%,1);
-    background: linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
-    background: -webkit-linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00DF9A",endColorstr="#DFFA2D",GradientType=1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
     font-size: 150px;
-    margin-bottom: 0;
+    margin: 0 0 0 0;
 }
 
 .about_rnxg p{
     margin: 0 auto;
-    width: 700px;
-    margin-top: 0;
-    font-size: 30px;
-}
-
-.about_ramgeddon{
-    margin-top: 15vw;
-    margin-bottom: 10vw;
-}
-
-.about_ramgeddon h1{
-    font-size: 150px;
-    margin-bottom: 0;
-}
-
-.about_ramgeddon p{
-    margin: 0 auto;
-    width: 700px;
+    width: auto;
+    height: auto;
     margin-top: 0;
     font-size: 30px;
 }
@@ -203,7 +273,7 @@ header p{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 3vw;
+    gap: 5vw;
     margin: 5vw 10vw;
     padding: 20px 10px;
 }
@@ -220,7 +290,7 @@ header p{
     object-fit: cover;
     transition: 0.7s;
     border-radius: 2vw;
-    border-bottom: 4px solid #f20606;
+    border-bottom: 4px solid #ffffff;
 }
 
 .cards::after {
@@ -229,8 +299,17 @@ header p{
 }
 
 #card_h1{
-    font-size: 150px;
+    font-size: 100px;
     margin-bottom: 2vw;
+    margin-top: 20vw;
+    background: rgb(0, 93, 224);
+    background: linear-gradient(90deg,rgb(0, 93, 224) 0%,rgb(46, 196, 250) 100%);
+    background: -webkit-linear-gradient(90deg,rgb(0, 93, 224) 0%,rgb(46, 196, 250) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00DF9A",endColorstr="#DFFA2D",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .card_img{
@@ -238,17 +317,20 @@ header p{
     width: 75%;
     height: auto;
     transition: 0.5s;
-    border-bottom: 4px solid #f20606;
+    border-bottom: 4px solid #ffffff;
 }
 
 .card:hover .card_img{
     scale: 1.2;
-    box-shadow: 0vw 0vw 1vw 1vw rgba(215, 16, 16, 0.63);
+    box-shadow: 0vw 0vw 1vw 0.2vw #00ff75;
+    border-bottom: 4px solid #00ff75;
 }
 
 .card:hover{
     scale: 1.1;
-    box-shadow: 0vw 0vw 1vw 1vw rgba(214, 18, 18, 0.53);
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    box-shadow: 0px 0px 30px 10px rgba(0, 255, 117, 0.30);
+    border-bottom: 4px solid #00ff75;
 }
 
 .card_h{
@@ -259,7 +341,7 @@ header p{
 .card_p{
     margin: -2vw auto;
     display: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .card:hover .card_p{
@@ -272,8 +354,9 @@ header p{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 5vw;
-    margin: 0 auto;
+    gap: 20vw;
+    margin: 10vw auto;
+    margin-bottom: 0;
     padding: 20px 10px;
 }
 
@@ -284,289 +367,159 @@ header p{
     min-height: 400px;
     height: 500px;
     border-radius: 2vw;
-    border-bottom: 2vw solid red;
+    border-bottom: 0.8vw solid rgb(57, 59, 177);
+    box-shadow: 1vw 1vw 1vw 1vw #1c214a;
 }
 
-video{
-    margin: 5vw auto;
-    border-bottom: 2vw solid red;
-}
-  
-.footer {
-    border-top: 10px solid red;
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.footer p{
-    width: 75vw;
-    color: #fff;
-    margin: 10px 0 10px 0;
-    font-size: 30px;
-    font-weight: 300;
+.poster_video{
     text-align: center;
 }
-  
-.social-icon, .menu {
+
+iframe{
+    margin: 5vw auto;
+    border-bottom: 2vw solid rgb(61, 59, 152);
+}
+
+footer{
     display: flex;
-}
-  
-.social-icon_item, .menu_item {
-    list-style: none;
-}
-  
-.social-icon_link {
-    font-size: 40px;
-    color: #fff;
-    margin: 50px 5vw;
-    display: inline-block;
-    transition: 0.3s;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
 }
 
-.social-icon_link:hover {
-    transform: translateY(-10px);
-}
-  
-.menu_link {
+#rnxg_footer{
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(-70deg,#ff7170,#ffe57f);
+    -webkit-background-clip: text;
+    background-clip: text;
     font-size: 40px;
-    color: #fff;
-    margin: 0 3vw;
-    display: inline-block;
+}
+
+.inf{
+    width: 20vw;
+    font-size: 20px;
+}
+
+
+.club h2{
+    font-size: 40px;
+}
+
+.ul_club{
+    margin-left: -40px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+
+.other_link h2{
+    font-size: 40px;
+}
+
+.ul_other{
+    margin-left: -40px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+iframe{
+    width: 80vw;
+    height: 40vw;
+}
+
+.contactus_link h2{
+    font-size: 40px;
+}
+
+.ul_contact{
+    margin-left: -40px;
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#email{
+    font-size: 20px;
+}
+
+.contact_icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    padding: 8px 8px;
+    max-width: 1.5vw;
+    max-height: 1.5vw;
+    background-color: white;
+    border-radius: 5vw;
+}
+
+.contact_icon:hover{
+    margin-top: -5px;
+}
+
+#last_line{
+    padding-bottom: 5vw;
+}
+
+.link{
+    color: #ffffff;
     text-decoration: none;
-    opacity: 0.75;
-    font-weight: 300;
-}
-  
-.menu_link:hover {
-    opacity: 1;
 }
 
-@media screen and (max-width: 1110px){
-    #home_link{
-        margin-left: 30vw;
-    }
+.link:hover{
+    color: rgb(94, 255, 0);
+}
+
+.last_line{
+    text-align: center;
 }
 
 @media screen and (max-width: 1000px){
-    #home_link{
-        margin-left: 20vw;
+    .svg-frame{
+        margin-left: 5vw;
+        margin-top: 5vw;
+    }
+    .circle{
+        margin-left: 15vw;
+        margin-top: -15vw;
     }
 }
 
-@media screen and (max-width: 800px){
-    #home_link{
-        margin-left: 7.8vw;
-    }
-    header p{
-        width: 100%;
-    }
-    .about_rnxg p{
-        width: 100%;
-    }
-    .about_ramgeddon p{
-        width: 100%;
-    }
-}
-  
-@media  screen and (max-width: 600px){
-    html{
-        background-image: url("images/WhatsApp\ Image\ 2023-01-10\ at\ 22.56.00.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    body{
-        margin: 2vw;
-        background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-        color: white;
-        text-align: center;
-        font-family: 'Rochester';
-    }
-    .navbar{
-        position: fixed;
-        margin: 0 0;
-        width: auto;
-        height: auto;
-        background-color: red;
-        border-radius: 30px;
-        z-index: 1;
-    }
-    #navul{
-        display: none;
-        list-style-type: none;
-        padding: 0 10px;
-    }
-    #nav-icon{
-        display: block;
-    }
-    .navbar a{
-        margin-left: 0;
-        text-decoration: none;
-        color: black;
-        font-size: 50px;
-    }
-    .navbar:hover #navul{
-        display: flex;
-        flex-direction: column;
-    }
-    header{
-        padding-top: 25vw;
-    }
+@media  screen and (max-width: 700px){
     header h1{
-        font-size: 100px;
-        margin-bottom: 0vw;
+        font-size: 80px;
     }
     header p{
-        margin: 0 auto;
-        width: 100%;
-        font-size: 40px;
-        margin-bottom: 5vw;
-    }
-    .about_rnxg{
-        padding-top: 25vw;
-        margin-bottom: 5vw;
+        font-size: 20px;
     }
     .about_rnxg h1{
         font-size: 100px;
-        margin-bottom: 0;
     }
     .about_rnxg p{
-        margin: 0 auto;
-        width: 100%;
-        font-size: 40px;
-    }
-    .about_ramgeddon{
-        margin-top: 25vw;
-        margin-bottom: 10vw;
-    }
-    .about_ramgeddon h1{
-        font-size: 100px;
-        margin-bottom: 0;
-    }
-    .about_ramgeddon p{
-        margin: 0 auto;
-        width: 100%;
-        font-size: 40px;
+        font-size: 20px;
     }
     #card_h1{
         font-size: 100px;
     }
-    .cards{
-        margin-left: -0.5vw;
-        display: flex;
-        flex-direction: column;
-    }
-    .card{
-        width: 75vw;
-        height: 400px;
-        margin: 20vw auto;
-        scale: 1.1;
-        box-shadow: 2vw 2vh 2vw 2vh rgba(214, 18, 18, 0.53);
-    }
     .card_img{
         scale: 1.2;
-        box-shadow: 1vw 1vh 1vw 1vh rgba(215, 16, 16, 0.63);
+        box-shadow: 0vw 0vw 1vw 0.2vw #00ff75;
+        border-bottom: 4px solid #00ff75;
     }
-    .card_p{
-        margin: 2vw auto;
-        display: block;
-        font-size: 20px;
-    }
-    .card_h{
-        margin-top: 8vw;
-        font-size: 30px;
-    }
-    .poster_images{
-        margin-left: -2vw;
-        display: flex;
-        flex-direction: column;
-    }
-    .poster_img{
-        width: 80vw;
-        height: auto;
-        margin: 10vw auto;
-        border-radius: 5vw;
-        border-bottom: 2vw solid red;
-    }
-    video{
-        width: 80vw;
-        height: auto;
-        margin: 10vw;
-        border-bottom: 2vw solid red;
-    }
-    footer{
-        margin-left: 2vw;
-        border-top: 4px solid #f20606;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        margin-bottom: 0;
-    }
-    #rnxg_footer{
-        font-size: 8vw;
-    }
-    .inf{
-        font-size: 4vw;
-    }
-    .club{
-        margin-left: 0vw;
-    }
-    .club h2{
-        font-size: 6vw;
-    }
-    .ul_club{
-        list-style-type: none;
-        font-size: 4vw;
-    }
-    .other_link{
-        margin-top: 0vw;
-        margin-left: 0vw;
-    }
-    .other_link h2{
-        font-size: 6vw;
-    }
-    .ul_other{
-        list-style-type: none;
-        font-size: 4vw;
-    }
-    .contactus_link{
-        margin-top: 0vw;
-        margin-left: 0vw;
-    }
-    .contactus_link h2{
-        font-size: 6vw;
-    }
-    .ul_contact{
-        margin-left: 0;
-        list-style-type: none;
-        font-size: 4vw;
-        display: flex;
-        flex-direction: row;
-    }
-    #email{
-        font-size: 4vw;
-    }
-    .contact_icon{
-        margin-left: 12vw;
-        width: 4vw;
-        height: 4vw;
-        background-color: white;
-        border-radius: 5vw;
-    }
-    #last_line{
-        padding-bottom: 10vw;
-    }
-    .link{
-        color: #ffffff;
-        text-decoration: none;
-    }
-    .link:hover{
-        color: red;
+    .card{
+        margin-top: 10vw;
+        scale: 1.1;
+        background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+        box-shadow: 0px 0px 30px 10px rgba(0, 255, 117, 0.30);
+        border-bottom: 4px solid #00ff75;
     }
 }
