@@ -1,135 +1,291 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
-
-html{
-    background-color: rgb(171, 171, 171);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 body{
     margin: 25px auto;
     width: 80vw;
-    background-color: #081736;
-    text-align: left;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #11101d;
+    font-family: 'Inter', sans-serif;
 }
 
-fieldset{
+h1{
+    background: hsla(161,100%,44%,1);
+    background: linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
+    background: -webkit-linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00DF9A",endColorstr="#DFFA2D",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+}
+
+form{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
     gap: 25px;
     max-width: 100%;
     margin: 0 0;
     padding: 20px 10px;
     padding: 2rem 0;
+    color: #00df9a;
 }
 
 legend{
-    color: rgb(45, 186, 9);
-    margin-left: 20px;
+    background: hsla(161,100%,44%,1);
+    background: linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
+    background: -webkit-linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00DF9A",endColorstr="#DFFA2D",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-fieldset::after {
-    content: "";
-    width: 350px;
-}
-
-fieldset:last-of-type{
-    border-bottom: none;
-}
-
-.check{
+fieldset{
+    border-radius: 10px;
+    border: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
     align-items: left;
-    gap: 2px;
-    min-width: 2px;
+    gap: 10px;
     margin: 0 0;
-    padding: 1px 2px;
+    background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+}
+
+#fieldset1, #fieldset2{
+    display: none;
+}
+
+.input_field{
+    width: 36vw;
+    height: 40px;
+    border-radius: 10px;
+    border: 0.2px solid gray;
+}
+
+input, select{
+    width: 100%;
+    outline: none;
     border: none;
-    padding: 0 0;
-    border-bottom: 3px solid #3b3b4f;
+    color: white;
+    background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+    background-color: #11101d;
 }
 
-.inline{
-    width: 50px;
+input:focus{
+    border-bottom: 0.2vw solid #0073E6;
 }
 
-h1{
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 60px;
-    border-bottom: 5px solid rgb(90, 92, 91);
+input:valid{
+    border-color: rgb(72, 249, 75);
 }
 
-form{
-    margin: 0 auto;
-    width: 80%;
-    padding: 5vw;
-    font-size: 30px;
-}
-  
-label{
-    display: block;
-    margin: 0.5rem 0;
-}
-  
-input, textarea, select{
-    margin: 10px 0 0 0;
-    width: 250px;
-    min-height: 2em;
-    background-color: #dbdbdf;
-    border: 1px solid #3b3b3b;
-    color: #2c2b2b;
+.check{
+    gap: 10px;
+    border-radius: 10px;
+    width: 36vw;
+    height: 40px;
 }
 
-input:focus, textarea:focus, select:focus{
-    background-color: rgb(92, 255, 89);
+.check input{
+    width: 15px;
 }
 
-::placeholder{
-    color: #3b3b3b;
+.first_legend{
+    font-size: 12px;
+    padding: 2px;
+    color: white;
+    background-color: #0073E6;
+    border-radius: 5px;
 }
 
-#fieldset1{
-    display: none;
+.T_C{
+    width: 80vw;
 }
 
-#fieldset2{
-    display: none;
+.T_C input{
+    width: 15px;
 }
- 
-.button{
-    padding: 0;
-    border-radius: 5vw;
-    background-color: rgb(185, 183, 183);
-    width: 150px;
-    height: 50px;
-    color: black;
-    box-shadow: 0.5vw 0.5vw 1vw 0.1vw rgb(82, 80, 80);
+
+.T_C label{
+    color: white;
+}
+
+.T_C a{
+    background: hsla(161,100%,44%,1);
+    background: linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
+    background: -webkit-linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00DF9A",endColorstr="#DFFA2D",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #button_center{
-    text-align: center;
+    background-color: #11101d;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    gap: 50vw;
 }
 
-.button:hover{
-    box-shadow: 1vw 1vw 1vw 0.1vw rgb(82, 80, 80);
-    scale: 1.2;
+#button{
+    position: relative;
+    padding: 0.8em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-a{
-    color: rgb(0, 119, 255);
+#button a{
+    color: white;
+    text-decoration: none;
+}
+   
+#button:hover{
+    box-shadow: 0 0 10px hsla(161,100%,44%,1), 0 0 25px hsla(68,95%,58%,1), 0 0 50px hsla(161,100%,44%,1);
+    transition-delay: 0.6s;
+}
+   
+#button span{
+    position: absolute;
+}
+   
+#button span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsla(161,100%,44%,1));
+}
+   
+#button:hover span:nth-child(1){
+    left: 100%;
+    transition: 0.7s;
+}
+   
+#button span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsla(68,95%,58%,1));
+}
+   
+#button:hover span:nth-child(3){
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+}
+   
+#button span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, hsla(161,100%,44%,1));
+}
+   
+#button:hover span:nth-child(2){
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+}
+   
+#button span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, hsla(68,95%,58%,1));
+}
+   
+#button:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+}
+   
+#button:active{
+    background: hsla(161,100%,44%,1);
+    background: linear-gradient(to top right, hsla(161,100%,44%,1), hsla(68,95%,58%,1));
+    color: #bfbfbf;
+    box-shadow: 0 0 8px hsla(161,100%,44%,1), 0 0 8px hsla(68,95%,58%,1), 0 0 8px hsla(161,100%,44%,1);
+    transition: 0.1s;
+}
+   
+#button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2){
+    transition: none;
+    transition-delay: none;
+}
+   
+
+@media screen and (max-width: 1100px) {
+    .input_field{
+        width: 75vw;
+    }
+    .check{
+        width: 75vw;
+    }
+    .T_C{
+        width: 100vw;
+    }
+    #button_center{
+        gap: 30vw;
+    }
 }
 
-.T_C p{
-    margin: 0;
+@media screen and (max-width: 750px) {
+    #button_center{
+        gap: 10vw;
+    }
 }
 
-@media screen and (max-width: 620px){
+@media screen and (max-width: 500px) {
+    #button_center{
+        gap: 5vw;
+    }
+}
 
+@media screen and (max-width: 450px) {
+    #button_center{
+        gap: 2vw;
+    }
+    .button1, .button2{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .check{
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 40px;
+    }
+    #button_center{
+        gap: 2vw;
+    }
+    .button1, .button2{
+        width: 30vw;
+        height: 60px;
+    }
 }
