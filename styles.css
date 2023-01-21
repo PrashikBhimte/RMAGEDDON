@@ -209,21 +209,21 @@ body{
     text-decoration: none;
 }
 
-#navul2{
+.navul2{
     float: right;
     list-style-type: none;
     display: flex;
     flex-direction: row;
 }
 
-#navul2 a{
+.navul2 a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 20px;
     margin-left: 2vw;
 }
 
-#navul2 a:hover{
+.navul2 a:hover{
     background: hsla(161,100%,44%,1);
     background: linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
     background: -webkit-linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
@@ -256,8 +256,8 @@ header p{
     text-align: left;
     margin: 0 0;
     width: 60vw;
-    font-size: 30px;
-    margin-bottom: 5vw;
+    font-size: 20px;
+    margin-bottom: 10vw;
 }
 
 #reg_link{
@@ -312,7 +312,7 @@ header p{
     color: #828acb;
     text-align: center;
     padding: 5vw;
-    margin: 30vw auto; 
+    margin: 40vw auto; 
     margin-bottom: 5vw;
 }
 
@@ -587,13 +587,14 @@ iframe{
 }
 
 @media  screen and (max-width: 700px){
-    #navul2{
+    .navul2{
         display: none;
+        margin: 0 40vw;
     }
     #menu_but{
         display: block;
     }
-    .menu_but:hover +.navul2{
+    .menu_but:hover .navul2{
         display: flex;
         flex-direction: column;
     }
@@ -647,84 +648,12 @@ iframe{
         font-size: 80px;
     }
     .about_rnxg p{
-        margin-left: -15vw;
+        margin-left: 0vw;
         width: 80vw;
         font-size: 18px;
     }
     #card_h1{
         font-size: 80px;
-    }
-    #rnxg_button{
-        position: relative;
-        padding: 1em 1.8em;
-        outline: none;
-        border: 1px solid #30303000;
-        background: #21212100;
-        color: #828acb;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 10vw;
-        width: 90vw;
-        height: auto;
-        overflow: hidden;
-        transition: 0.2s;
-        border-radius: 20px;
-        cursor: pointer;
-        font-weight: bold;
-        margin-bottom: 2vw;
-        box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
-        transition-delay: 0.6s;
-        background: #ae00af;
-        background: linear-gradient(to top right, #ae00af, #001eff);
-        color: #bfbfbf;
-        box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
-        transition: 0.8s;
-    } 
-    #rnxg_button span{
-        position: absolute;
-    }  
-    #rnxg_button span:nth-child(1){
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, #ae00ff);
-        left: 100%;
-        transition: 0.7s;
-    }   
-    #rnxg_button span:nth-child(3){
-        bottom: 0;
-        right: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, #001eff);
-        right: 100%;
-        transition: 0.7s;
-        transition-delay: 0.35s;
-    }      
-    #rnxg_button span:nth-child(2){
-        top: -100%;
-        right: 0;
-        width: 2px;
-        height: 100%;
-        background: linear-gradient(180deg, transparent, #ae00ff);
-        top: 100%;
-        transition: 0.7s;
-        transition-delay: 0.17s;
-    } 
-    #rnxg_button span:nth-child(4){
-        bottom: -100%;
-        left: 0;
-        width: 2px;
-        height: 100%;
-        background: linear-gradient(360deg, transparent, #001eff);
-        bottom: 100%;
-        transition: 0.7s;
-        transition-delay: 0.52s;
-    }  
-    #rnxg_button span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2){
-        transition: 0.8s;
-        transition-delay: 0.6;
     }
     .contact_icon{
         max-width: 5vw;
@@ -740,7 +669,7 @@ iframe{
         font-size: 60px;
     }
     .about_rnxg p{
-        margin-left: -15vw;
+        margin-left: 0vw;
         width: 80vw;
         font-size: 18px;
     }

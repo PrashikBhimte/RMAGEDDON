@@ -3,7 +3,7 @@
 body{
     margin: 25px auto;
     width: 80vw;
-    background-color: rgb(237 238 240) ;
+    background-color: rgb(202, 203, 205) ;
     font-family: 'Inter', sans-serif;
 }
 
@@ -26,6 +26,7 @@ form{
 }
 
 fieldset{
+    border-radius: 10px;
     border: none;
     display: flex;
     flex-direction: row;
