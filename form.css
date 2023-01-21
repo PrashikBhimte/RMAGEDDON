@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+html{
+    background-color: rgb(171, 171, 171);
+}
+
 body{
-    background-color: rgb(0, 0, 15);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    margin: 25px auto;
+    width: 80vw;
+    background-color: #081736;
     text-align: left;
-    color: white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 fieldset{
@@ -17,9 +23,12 @@ fieldset{
     max-width: 100%;
     margin: 0 0;
     padding: 20px 10px;
-    border: none;
     padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
+}
+
+legend{
+    color: rgb(45, 186, 9);
+    margin-left: 20px;
 }
 
 fieldset::after {
@@ -51,9 +60,10 @@ fieldset:last-of-type{
 }
 
 h1{
-    color: white;
+    text-align: center;
+    color: rgb(0, 0, 0);
     font-size: 60px;
-    border-bottom: 5px solid rgb(67, 66, 131);
+    border-bottom: 5px solid rgb(90, 92, 91);
 }
 
 form{
@@ -70,11 +80,19 @@ label{
   
 input, textarea, select{
     margin: 10px 0 0 0;
-    width: 300px;
+    width: 250px;
     min-height: 2em;
-    background-color: #0a0a23;
-    border: 1px solid #0a0a23;
-    color: #ffffff;
+    background-color: #dbdbdf;
+    border: 1px solid #3b3b3b;
+    color: #2c2b2b;
+}
+
+input:focus, textarea:focus, select:focus{
+    background-color: rgb(92, 255, 89);
+}
+
+::placeholder{
+    color: #3b3b3b;
 }
 
 #fieldset1{
@@ -88,10 +106,11 @@ input, textarea, select{
 .button{
     padding: 0;
     border-radius: 5vw;
-    background-color: white;
+    background-color: rgb(185, 183, 183);
     width: 150px;
     height: 50px;
     color: black;
+    box-shadow: 0.5vw 0.5vw 1vw 0.1vw rgb(82, 80, 80);
 }
 
 #button_center{
@@ -99,8 +118,7 @@ input, textarea, select{
 }
 
 .button:hover{
-    background-color: white;
-    box-shadow: 0vw 0vw 1vw 0.5vw white;
+    box-shadow: 1vw 1vw 1vw 0.1vw rgb(82, 80, 80);
     scale: 1.2;
 }
 

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body{
+    margin: 25px auto;
+    width: 80vw;
+    background-color: rgb(237 238 240) ;
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-size: 60px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    gap: 25px;
+    max-width: 100%;
+    margin: 0 0;
+    padding: 20px 10px;
+    padding: 2rem 0;
+    color: rgb(85, 85, 85);
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    gap: 10px;
+    margin: 0 0;
+    background-color: white;
+}
+
+#fieldset1, #fieldset2{
+    display: none;
+}
+
+.input_field{
+    width: 36vw;
+    height: 40px;
+    border-radius: 10px;
+    border: 0.2px solid gray;
+}
+
+input, select{
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+input:focus{
+    border-bottom: 0.2vw solid #0073E6;
+}
+
+input:valid{
+    border-color: rgb(72, 249, 75);
+}
+
+.check{
+    gap: 10px;
+    border-radius: 10px;
+    width: 36vw;
+    height: 40px;
+}
+
+.check input{
+    width: 15px;
+}
+
+.first_legend{
+    font-size: 12px;
+    padding: 2px;
+    color: white;
+    background-color: #0073E6;
+    border-radius: 5px;
+}
+
+.T_C{
+    width: 80vw;
+}
+
+.T_C input{
+    width: 15px;
+}
+
+#button_center{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    gap: 60vw;
+}
+
+.button1{
+    color: black;
+    float: left;
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    background-color: #e60000;
+    border-radius: 5px;
+    box-shadow: 0.5vw 0.5vw 1vw 0.2vw #b60000;
+}
+
+.button1 h2{
+    margin: 10px 50px;
+}
+
+#button_center a{
+    text-decoration: none;
+}
+
+.button2{
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #0073E6;
+    border-radius: 5px;
+    box-shadow: 0.5vw 0.5vw 1vw 0.2vw #005bb6;
+}
+
+.button1:hover{
+    scale: 1.2;
+    box-shadow: 1vw 1vw 1vw 0.2vw #b60000;
+}
+
+.button2:hover{
+    scale: 1.2;
+    box-shadow: 1vw 1vw 1vw 0.2vw #005bb6;
+}

@@ -10,13 +10,24 @@
     <body>
         <nav class="navbar" id="navbar">
             <ul id="navul1">
-                <li id="link_rnxg"><a target="_blank" href="https://www.rnxg.co.in/">RNXG</a></li>
+                <li id="link_rnxg"><button id="rnxg_button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> <a target="_blank" href="https://www.rnxg.co.in/">RNXG</a>
+                  </button>
+                </li>
             </ul>
-            <ul id="navul2">
-                <li><a href="https://www.rnxg.co.in/projects">Projects</a></li>
-                <li><a href="https://www.rnxg.co.in/events">Events</a></li>
-                <li><a href="#https://www.rnxg.co.in/profiles">About</a></li>
-            </ul>
+            <div class="menu_but">
+                <button id="menu_but">
+                    Menu
+                </button>
+                <ul class="navul2" id="navul2">
+                    <li><a href="https://www.rnxg.co.in/projects">Projects</a></li>
+                    <li><a href="https://www.rnxg.co.in/events">Events</a></li>
+                    <li><a href="#https://www.rnxg.co.in/profiles">About</a></li>
+                </ul>
+            </div>
         </nav>
         <header id="home">
             <h1>Rmageddon</h1>
@@ -24,6 +35,11 @@
                 Rmageddon is the intra college technical festival of 
                 Shri Guru Gobind Singhji institute of engineering and tecnology, Nanded.
             </p>
+            <a id="reg_link" href="form1.html">
+                <div id="reg_button">
+                    <span class="text">Registration</span>
+                </div>
+            </a>
             <div class="svg-frame">
                 <svg style="--i:0;--j:0;">
                     <g id="out1">
@@ -74,23 +90,17 @@
             </div>
         </header>
         <section id="rnxg" class="about_rnxg">
-            <button>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> <h1>RNXG</h1> <p>
-                    Members of the RNXG, regardless of their fields, 
-                    collaborate as a team to generate multidisciplinary
-                    technical expertise. Robotics for Next Generation,
-                    or RNXG, is the greatest platform for working on 
-                    various issue statements and developing the best 
-                    solutions for them. Artificial Intelligence, Machine
-                    Learning, Deep Learning, Embedded Systems, IoT, 
-                    VLSI, Robotics, and other emerging technologies 
-                    are explored in RNXG.
-                </p>
-            </button>
-            
+            <h1>RNXG</h1> <p>
+                Members of the RNXG, regardless of their fields, 
+                collaborate as a team to generate multidisciplinary
+                technical expertise. Robotics for Next Generation,
+                or RNXG, is the greatest platform for working on 
+                various issue statements and developing the best 
+                solutions for them. Artificial Intelligence, Machine
+                Learning, Deep Learning, Embedded Systems, IoT, 
+                VLSI, Robotics, and other emerging technologies 
+                are explored in RNXG.
+            </p>
         </section>
         <h1 id="card_h1">Retronics</h1>
         <section class="cards">
@@ -98,16 +108,31 @@
                 <img class="card_img" src="images/b14.jpg">
                 <h1 class="card_h">Retrofeista</h1>
                 <p class="card_p">Be fast. Run run and run</p>
+                <a href="#">
+                    <button class="shadow__btn">
+                        Rule Book
+                    </button>
+                </a>
             </div>
             <div class="card">
                 <img class="card_img" src="images/b18.jpg">
                 <h1 class="card_h">Nijia Clash</h1>
                 <p class="card_p">Stay in hte circle.</p>
+                <a href="#">
+                    <button class="shadow__btn">
+                        Rule Book
+                    </button>
+                </a>
             </div>
             <div class="card">
                 <img class="card_img" src="images/b23.jpg">
                 <h1 class="card_h">Pac Runner</h1>
                 <p class="card_p">Be on the line.</p>
+                <a href="#">
+                    <button class="shadow__btn">
+                        Rule Book
+                    </button>
+                </a>
             </div>
         </section>
         <section class="posters">

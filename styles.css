@@ -1,37 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,100;1,200;1,300;1,400&family=Press+Start+2P&display=swap');
 
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');*/
+body{
+    font-family: 'Poppins';
+    margin: 2vw;
+    background-color: #080710;
+    color: white;
+    text-align: left;
+}
 
-button{
+#rnxg_button{
     position: relative;
-    padding: 1em 1.8em;
+    padding: 0.8em 1.8em;
     outline: none;
-    border: 1px solid #30303000;
-    background: #21212100;
-    color: #828acb;
+    border: 1px solid #ffffff00;
+    background: #ffffff00;
+    color: #ae00ff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 10vw;
-    width: 90vw;
-    height: auto;
+    font-size: 20px;
+    width: 150px;
     overflow: hidden;
     transition: 0.2s;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    margin-bottom: 2vw;
 }
    
-button:hover{
+#rnxg_button:hover{
     box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
     transition-delay: 0.6s;
 }
    
-button span{
+#rnxg_button span{
     position: absolute;
 }
    
-button span:nth-child(1){
+#rnxg_button span:nth-child(1){
     top: 0;
     left: -100%;
     width: 100%;
@@ -39,12 +43,12 @@ button span:nth-child(1){
     background: linear-gradient(90deg, transparent, #ae00ff);
 }
    
-button:hover span:nth-child(1){
+#rnxg_button:hover span:nth-child(1){
     left: 100%;
     transition: 0.7s;
 }
    
-button span:nth-child(3){
+#rnxg_button span:nth-child(3){
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -52,13 +56,13 @@ button span:nth-child(3){
     background: linear-gradient(90deg, transparent, #001eff);
 }
    
-button:hover span:nth-child(3){
+#rnxg_button:hover span:nth-child(3){
     right: 100%;
     transition: 0.7s;
     transition-delay: 0.35s;
 }
    
-button span:nth-child(2){
+#rnxg_button span:nth-child(2){
     top: -100%;
     right: 0;
     width: 2px;
@@ -66,13 +70,13 @@ button span:nth-child(2){
     background: linear-gradient(180deg, transparent, #ae00ff);
 }
    
-button:hover span:nth-child(2){
+#rnxg_button:hover span:nth-child(2){
     top: 100%;
     transition: 0.7s;
     transition-delay: 0.17s;
 }
    
-button span:nth-child(4){
+#rnxg_button span:nth-child(4){
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -80,13 +84,13 @@ button span:nth-child(4){
     background: linear-gradient(360deg, transparent, #001eff);
 }
    
-button:hover span:nth-child(4){
+#rnxg_button:hover span:nth-child(4){
     bottom: 100%;
     transition: 0.7s;
     transition-delay: 0.52s;
 }
    
-button:active{
+#rnxg_button:active{
     background: #ae00af;
     background: linear-gradient(to top right, #ae00af, #001eff);
     color: #bfbfbf;
@@ -94,10 +98,11 @@ button:active{
     transition: 0.1s;
 }
    
-button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2){
+#rnxg_button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2){
     transition: none;
     transition-delay: none;
 }
+   
    
 
 .svg-frame{
@@ -172,14 +177,6 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
     margin-top: -240px;
 }
 
-body{
-    font-family: 'Poppins';
-    margin: 2vw;
-    background-color: #080710;
-    color: white;
-    text-align: left;
-}
-
 .navbar{
     margin: 0 0;
     width: 100%;
@@ -189,11 +186,27 @@ body{
     z-index: 1;
 }
 
+#menu_but{
+    float: right;
+    display: none;
+    color: white;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(8, 8, 66);
+    border: none;
+    box-shadow: 1vw 1vw 1vw 0.2vw rgb(5, 5, 45);
+}
+
 #navul1{
     float: left;
     list-style-type: none;
     display: flex;
     flex-direction: row;
+}
+
+#navul1 a{
+    text-decoration: none;
 }
 
 #navul2{
@@ -203,14 +216,14 @@ body{
     flex-direction: row;
 }
 
-.navbar a{
+#navul2 a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 2vw;
 }
 
-.navbar a:hover{
+#navul2 a:hover{
     background: hsla(161,100%,44%,1);
     background: linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
     background: -webkit-linear-gradient(90deg,hsla(161,100%,44%,1) 0%,hsla(68,95%,58%,1) 100%);
@@ -242,15 +255,64 @@ header h1{
 header p{
     text-align: left;
     margin: 0 0;
-    width: 70vw;
+    width: 60vw;
     font-size: 30px;
     margin-bottom: 5vw;
 }
 
+#reg_link{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+}
+
+#reg_button{
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    width: 150px;
+    padding: 3px;
+    cursor: pointer;
+    transition: all .3s;
+}
+   
+#reg_button:active, #reg_button:hover{
+    outline: 0;
+}
+   
+#reg_button span{
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+   
+#reg_button:hover span{
+    background: none;
+}
+   
+#reg_button:active{
+    transform: scale(0.9);
+}
+
 .about_rnxg{
+    width: 80vw;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    color: #828acb;
     text-align: center;
-    padding-top: 5vw;
-    margin-top: 30vw;
+    padding: 5vw;
+    margin: 30vw auto; 
     margin-bottom: 5vw;
 }
 
@@ -336,16 +398,39 @@ header p{
 .card_h{
     margin-top: 2vw;
     font-size: 35px;
+    margin-bottom: 0;
 }
 
 .card_p{
-    margin: -2vw auto;
+    margin: 0 auto;
     display: none;
     font-size: 15px;
 }
 
 .card:hover .card_p{
     display: block;
+}
+
+.shadow__btn{
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+  
+.shadow__btn:hover{
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
 }
 
 .poster_images{
@@ -492,9 +577,26 @@ iframe{
         margin-left: 15vw;
         margin-top: -15vw;
     }
+    .inf{
+        width: 30vw;
+    }
+    .contact_icon{
+        max-width: 2.5vw;
+        max-height: 2.5vw;
+    }
 }
 
 @media  screen and (max-width: 700px){
+    #navul2{
+        display: none;
+    }
+    #menu_but{
+        display: block;
+    }
+    .menu_but:hover +.navul2{
+        display: flex;
+        flex-direction: column;
+    }
     header h1{
         font-size: 80px;
     }
@@ -521,5 +623,134 @@ iframe{
         background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
         box-shadow: 0px 0px 30px 10px rgba(0, 255, 117, 0.30);
         border-bottom: 4px solid #00ff75;
+    }
+    .card_p{
+        display: block;
+    }
+    .inf{
+        width: 50vw;
+    }
+    footer{
+        gap: 20px;
+    }
+    .contact_icon{
+        max-width: 3.5vw;
+        max-height: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header h1{
+        font-size: 60px;
+    }
+    .about_rnxg h1{
+        font-size: 80px;
+    }
+    .about_rnxg p{
+        margin-left: -15vw;
+        width: 80vw;
+        font-size: 18px;
+    }
+    #card_h1{
+        font-size: 80px;
+    }
+    #rnxg_button{
+        position: relative;
+        padding: 1em 1.8em;
+        outline: none;
+        border: 1px solid #30303000;
+        background: #21212100;
+        color: #828acb;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 10vw;
+        width: 90vw;
+        height: auto;
+        overflow: hidden;
+        transition: 0.2s;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-bottom: 2vw;
+        box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+        transition-delay: 0.6s;
+        background: #ae00af;
+        background: linear-gradient(to top right, #ae00af, #001eff);
+        color: #bfbfbf;
+        box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+        transition: 0.8s;
+    } 
+    #rnxg_button span{
+        position: absolute;
+    }  
+    #rnxg_button span:nth-child(1){
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #ae00ff);
+        left: 100%;
+        transition: 0.7s;
+    }   
+    #rnxg_button span:nth-child(3){
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #001eff);
+        right: 100%;
+        transition: 0.7s;
+        transition-delay: 0.35s;
+    }      
+    #rnxg_button span:nth-child(2){
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #ae00ff);
+        top: 100%;
+        transition: 0.7s;
+        transition-delay: 0.17s;
+    } 
+    #rnxg_button span:nth-child(4){
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #001eff);
+        bottom: 100%;
+        transition: 0.7s;
+        transition-delay: 0.52s;
+    }  
+    #rnxg_button span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2){
+        transition: 0.8s;
+        transition-delay: 0.6;
+    }
+    .contact_icon{
+        max-width: 5vw;
+        max-height: 5vw;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header h1{
+        font-size: 40px;
+    }
+    .about_rnxg h1{
+        font-size: 60px;
+    }
+    .about_rnxg p{
+        margin-left: -15vw;
+        width: 80vw;
+        font-size: 18px;
+    }
+    #card_h1{
+        font-size: 60px;
+    }
+    .poster_img{
+        min-width: 0;
+        min-height: 0;
+        width: 90vw;
+        height: auto;
     }
 }
